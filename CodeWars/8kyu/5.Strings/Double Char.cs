@@ -11,3 +11,28 @@ public class Kata
         return result;
     }
 }
+//
+using System;
+using System.Text;
+
+public class Kata
+{
+    public static string DoubleChar(string s)
+    {
+        if (String.IsNullOrEmpty(s))
+        {
+        throw new ArgumentException("s");
+        }
+        
+        StringBuilder builder = new StringBuilder();
+        
+        foreach(var value in s)
+        {
+        builder.Append(value);
+        builder.Append(value);
+        }
+        
+        return builder.ToString();
+        
+    }
+}
