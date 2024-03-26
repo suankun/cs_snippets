@@ -5,8 +5,8 @@ public class Kata
     {
         string result = "";
         for (int i=0; i<s.Length; i++) {
-        result += s[i];
-        result += s[i];
+            result += s[i];
+            result += s[i];
         }
         return result;
     }
@@ -21,15 +21,15 @@ public class Kata
     {
         if (String.IsNullOrEmpty(s))
         {
-        throw new ArgumentException("s");
+            throw new ArgumentException("s");
         }
         
         StringBuilder builder = new StringBuilder();
         
         foreach(var value in s)
         {
-        builder.Append(value);
-        builder.Append(value);
+            builder.Append(value);
+            builder.Append(value);
         }
         
         return builder.ToString();
