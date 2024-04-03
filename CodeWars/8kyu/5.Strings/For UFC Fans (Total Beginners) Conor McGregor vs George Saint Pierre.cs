@@ -10,3 +10,15 @@ public static class Kata
         return "I'd like to take this chance to apologize.. To absolutely NOBODY!";
     }
 }
+//
+using System;
+
+public static class Kata
+{
+    public static string Quote(string fighter)
+    {
+        return fighter.Equals("Conor McGregor", StringComparison.CurrentCultureIgnoreCase) 
+            ? "I'd like to take this chance to apologize.. To absolutely NOBODY!" 
+            : "I am not impressed by your performance.";
+    }
+}
