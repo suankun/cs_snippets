@@ -8,8 +8,8 @@ public static class Kata
         int[] z = new int[n];
         int counter = x;
         for (int i=0; i<n; i++) {
-        z[i] = counter;
-        counter+=x;
+            z[i] = counter;
+            counter+=x;
         }
         return z;
     }
