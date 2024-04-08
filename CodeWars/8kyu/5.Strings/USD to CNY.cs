@@ -9,3 +9,9 @@ public static class Kata
         return $"{result:f2} Chinese Yuan";
     }
 }
+//
+public static class Kata {
+    public static string Usdcny(int usd) {
+        return $"{(usd * 6.75f):0.00} Chinese Yuan";
+    }
+}
