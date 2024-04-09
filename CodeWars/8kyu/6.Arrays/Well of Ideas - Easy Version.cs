@@ -16,3 +16,14 @@ public class Kata
         return result;
     }
 }
+//
+using System.Linq;
+
+public class Kata
+{
+    public static string Well(string[] x)
+    {
+        int count = x.Count(v => v == "good");
+        return (count > 2) ? "I smell a series!" : (count >= 1) ? "Publish!" : "Fail!";
+    }
+}
